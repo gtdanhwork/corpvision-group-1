@@ -36,3 +36,10 @@ I. Third-party Libraries and Frameworks
 II. Font Family
     
     1. Jost, Sans Serif
+
+III. Testing
+
+    1. Responsive
+    https://responsively.app/
+
+    2. Function Scripts
