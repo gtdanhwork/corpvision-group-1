@@ -1,0 +1,66 @@
+body {
+    font-family: "Jost", sans-serif;
+}
+
+.dropdown-item.active {
+    color: #009f4d;
+    background: none;
+
+}
+
+.navbar-nav .nav-link.active {
+    color: #009f4d;
+}
+
+.header_logo h2 {
+    color: rgb(63, 58, 100);
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.header_logo span {
+    font-size: 15px;
+    display: block;
+    padding-left: 46px;
+}
+
+.header_logo i {
+    color: #009f4d;
+    font-size: 30px;
+}
+
+.header_navigation a {
+    color: rgba(63, 58, 100, 0.7);
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: all 0.5s;
+}
+
+.header_search button, .header_theme button {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.header_search button {
+    line-height: 45px;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    background: #009f4d;
+    outline: 0;
+    transform-origin: 50%;
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    color: white;
+}
+
+.header_theme button {
+    line-height: 45px;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+}
+
