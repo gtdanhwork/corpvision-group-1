@@ -279,16 +279,16 @@ body {
 .footer {
     background: #07071c;
     color: #8b8d9a;
+    align-items: center;
     padding-top: 80px;
 }
 
 .footer__content {
-    width: 90%;
+    width: 92%;
     margin: auto;
-
     display: grid;
     grid-template-columns: 2fr 2fr 1fr 1fr;
-    gap: 60px;
+    gap: 50px;
 }
 
 .footer__item h3 {
@@ -304,7 +304,7 @@ body {
 }
 
 .footer__item ul li {
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     font-size: 18px;
     line-height: 1.8;
 }
@@ -317,13 +317,12 @@ body {
 
 .logo i {
     color: #00c16e;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .logo h2 {
     color: white;
     font-size: 30px;
-    margin: 0;
 }
 
 .logo p {
@@ -334,18 +333,18 @@ body {
 }
 
 .desc {
-    margin: 40px 0;
+    margin: 20px 0 30px;
     font-size: 18px;
     line-height: 1.8;
 }
 
 .social {
     display: flex;
-    gap: 25px;
+    gap: 18px;
 }
 
 .social i {
-    font-size: 22px;
+    font-size: 15px;
     cursor: pointer;
 }
 
