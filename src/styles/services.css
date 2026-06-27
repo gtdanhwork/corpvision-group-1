@@ -33,7 +33,7 @@ body {
     text-align: center;
     align-items: center;
     padding: 0 220px;
-    font-weight: 100px;
+    font-weight: 700px;
 }
 
 .services__title p {
@@ -86,12 +86,55 @@ body {
     border-color: #00732c;
 }
 
-
-
-
-
 /* What industries we serve? */
+.industries {
+    background-color: #f7f7f7;
+}
 
+.section-subtitle {
+    color: #7e7d7d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.section-title {
+    font-size: 35px;
+    font-weight: 700;
+    color: #3F3A64;
+    margin: 0 48px;
+}
+
+.industry-card {
+    background: #e7e5e5d0;
+    border-radius: 10px;
+    padding: 40px 20px;
+    height: 100%;
+    gap: 25px;
+}
+
+.icon {
+    font-size: 40px;
+    color: #00a63f;
+}
+
+.industry-card h4 {
+    color: #3F3A64;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 15px;
+    transition: .5s;
+}
+
+.industry-card h4:hover {
+    color: #00a63f;
+}
+
+.industry-card p {
+    color: #666666;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
 
 
 /* Innovative technology */
@@ -388,3 +431,6 @@ body {
 .back-top:hover {
     transform: translateY(-5px);
 }
+
+
+/* Nháp */
