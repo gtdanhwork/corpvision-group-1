@@ -2,6 +2,10 @@ body {
     font-family: "Jost", sans-serif;
 }
 
+header {
+    height: 100px;
+}
+
 .dropdown-item.active {
     color: #009f4d;
     background: none;
@@ -13,9 +17,12 @@ body {
 }
 
 .header_logo h2 {
-    color: rgb(63, 58, 100);
+    /* color: rgb(63, 58, 100); */
+    color: #fff;
     font-weight: 600;
     font-size: 30px;
+    text-transform: capitalize;
+    
 }
 
 .header_logo span {
@@ -30,11 +37,14 @@ body {
 }
 
 .header_navigation a {
-    color: rgba(63, 58, 100, 0.7);
+    color: #fff;
     font-size: 15px;
     font-weight: 600;
 
     transition: all 0.5s;
+
+    
+    /* color: rgba(63, 58, 100, 0.7); */
 }
 
 .header_search button, .header_theme button {
@@ -59,8 +69,65 @@ body {
 
 .header_theme button {
     line-height: 45px;
-    text-align: center;
+    text-align: center; 
     width: 45px;
     height: 45px;
+}
+
+.banner_section {
+    height: 90vh;
+    background-image: linear-gradient(rgba(29,42,55,0.7),rgba(29,42,55,0.7)), url('/public/img/b1.jpg');
+    background-size: cover;
+}
+
+.banner_item {
+    color: #ffffff;
+}
+
+.banner_item h1 {
+    line-height: 1.1;
+    margin-bottom: 10px;
+    font-size: 65px;
+    max-width: 800px;
+    font-weight: 600px;
+}
+ 
+.banner_item p {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 600px;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #00a63f;
+    border-color: #00a63f;
+}
+
+.btn-cta {
+    padding: 15px 50px;
+    margin-top:30px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.shape svg {
+    fill: #fff;
+}
+
+.feature_section {
+    background-color: #f7f7f7;
+}
+
+.feature_left button {
+    padding: 15px 50px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+.testimonial_section {
+    background-color: #f7f7f7;
 }
 
