@@ -34,67 +34,179 @@
 <body>
 
     <!-- About our company -->
-    <section class="about">
+    <!DOCTYPE html>
+    <html lang="en">
 
-        <div class="container">
+    <head>
+        <meta charset="UTF-8">
+        <title>About Section</title>
 
-            <div class="row align-items-center">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-                <!-- Left -->
-                <div class="col-lg-6 about-left">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-                    <img src="img/about.jpg" alt="" class="about-img">
+    <body>
 
-                    <div class="experience">
+        <section class="about-section py-5">
+            <div class="container">
 
-                        <div class="experience-content">
+                <!-- ABOUT TOP -->
+                <div class="row align-items-center g-5">
 
-                            <h2>25+</h2>
+                    <!-- LEFT IMAGE -->
+                    <div class="col-lg-6">
+                        <div class="img-wrapper">
 
-                            <p>
-                                Years of <br>
-                                Experience.
-                            </p>
+                            <img src="/public/img/about2.jpg" alt="team" class="main-img">
 
+                            <!-- green background shape -->
+                            <div class="bg-shape"></div>
+
+                            <!-- badge -->
+                            <div class="badge-box">
+                                <h2>25+</h2>
+                                <p>Years of Experience</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- RIGHT CONTENT -->
+                    <div class="col-lg-6">
+
+                        <p class="sub-title">ABOUT OUR COMPANY</p>
+
+                        <h2 class="title">
+                            We are the next generation of the business world, creative solutions
+                        </h2>
+
+                        <p class="lead-text">
+                            Over 25 years, We complete every project with extra care as customer needs.
+                        </p>
+
+                        <p class="desc">
+                            Lorem ipsum viverra feugiat. Pellentesque libero ut justo, ultrices in ligula.
+                            Semper at tempufddfel.
+                        </p>
+
+                        <div class="action-box">
+                            <a href="#" class="btn btn-success px-4">Read More</a>
+
+                            <div class="play-btn">▶</div>
                         </div>
 
                     </div>
 
                 </div>
 
-                <!-- Right -->
-                <div class="col-lg-6 about-right">
+                <!-- FEATURE CARDS -->
+                <div class="row g-4 mt-5">
 
-                    <h6 class="sub-title">
-                        ABOUT OUR COMPANY
-                    </h6>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-card">
 
-                    <h1 class="title">
+                            <div>
+                                <i class="fa-brands fa-xing"></i>
+                            </div>
+
+                            <div>
+                                <h5>Perfect Design</h5>
+                                <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-card">
+
+                            <div>
+                                <i class="fa-regular fa-thumbs-up"></i>
+                            </div>
+
+                            <div>
+                                <h5>Carefully Planned</h5>
+                                <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-card">
+
+                            <div>
+                                <h5 class="text-success">Smartly Execute</h5>
+                                <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </body>
+
+    </html>
+
+    <!-- VIDEO SECTION -->
+
+    <section class="video-section">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-10 text-center">
+
+                    <h2>
                         We are the next generation of the business world,
                         creative solutions
-                    </h1>
+                    </h2>
 
-                    <p class="desc">
-                        Over 25 years, We complete every project with extra care
-                        as customer needs.
-                    </p>
-
-                    <p class="text">
-                        Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-                        ultrices in ligula. Semper at tempufddfel.
+                    <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Non quae, fugiat consequatur voluptatem ad.
+                        Sunt in culpa qui officia sed deserunt mollit anim id est
+                        laborum mollit anim id est nulla.
                     </p>
 
-                    <div class="action">
+                    <!-- Play Button -->
+                    <button class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal">
 
-                        <button class="btn btn-read">
-                            Read More
-                        </button>
+                        <i class="bi bi-play-fill"></i>
 
-                        <a href="#" class="play-btn">
-                            <i class="bi bi-play-fill"></i>
-                        </a>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VIDEO SECTION -->
+
+    <div class="modal fade" id="videoModal" tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+
+            <div class="modal-content border-0 bg-transparent">
+
+                <div class="modal-body p-0 position-relative">
+
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                        data-bs-dismiss="modal">
+                    </button>
+
+                    <div class="ratio ratio-16x9">
+
+                        <iframe src="https://www.youtube.com/embed/1ZYbU82GVz4" title="Meditation Music"
+                            allowfullscreen>
+                        </iframe>
 
                     </div>
 
@@ -104,30 +216,189 @@
 
         </div>
 
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Our Professionals -->
+    <!-- ================= TEAM ================= -->
+
+    <section class="team py-5">
 
         <div class="container">
 
+            <!-- Title -->
+            <div class="text-center mb-5">
+
+                <p class="team-subtitle">
+                    OUR PROFESSIONALS
+                </p>
+
+                <h2 class="team-title">
+                    Meet the Team
+                </h2>
+
+            </div>
+
+            <!-- Team List -->
             <div class="row g-4">
 
-                <!-- Item 1 -->
-                <div class="col-lg-4 col-md-6">
+                <!-- Member 1 -->
+                <div class="col-lg-3 col-md-6">
 
-                    <div class="service-item">
+                    <div class="team-item">
 
-                        <div class="d-flex align-items-start">
+                        <div class="team-img">
 
-                            <i class="bi bi-x-lg service-icon"></i>
+                            <img src="./img/team1.jpg" alt="" class="img-fluid">
 
-                            <div class="ms-4">
+                            <div class="team-overlay">
 
-                                <h3>Perfect Design</h3>
-
-                                <p>
-                                    Amus a ligula quam tesque et ut justo,
-                                    Duis sed dolor et amet.
-                                </p>
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
 
                             </div>
+
+                        </div>
+
+                        <h4>Amelia Jessica</h4>
+
+                        <p>Designer</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Member 2 -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="team-item">
+
+                        <div class="team-img">
+
+                            <img src="./img/team2.jpg" alt="" class="img-fluid">
+
+                            <div class="team-overlay">
+
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+
+                            </div>
+
+                        </div>
+
+                        <h4>Elizabeth Tracy</h4>
+
+                        <p>Photographer</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Member 3 -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="team-item">
+
+                        <div class="team-img">
+
+                            <img src="./img/team3.jpg" alt="" class="img-fluid">
+
+                            <div class="team-overlay">
+
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+
+                            </div>
+
+                        </div>
+
+                        <h4>Charlotte Ava</h4>
+
+                        <p>Designer</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Member 4 -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="team-item">
+
+                        <div class="team-img">
+
+                            <img src="./img/team4.jpg" alt="" class="img-fluid">
+
+                            <div class="team-overlay">
+
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+
+                            </div>
+
+                        </div>
+
+                        <h4>Emma Susan</h4>
+
+                        <p>Designer</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Why choose us -->
+    <!-- ================= WHY CHOOSE US ================= -->
+
+    <section class="choose py-5">
+
+        <div class="container">
+
+            <!-- Title -->
+            <div class="text-center mb-5">
+
+                <p class="choose-subtitle">
+                    WHY CHOOSE US
+                </p>
+
+                <h2 class="choose-title">
+                    People choose us because we serve the best for everyone
+                </h2>
+
+            </div>
+
+            <div class="row g-5">
+
+                <!-- Item 1 -->
+                <div class="col-lg-6">
+
+                    <div class="choose-item d-flex">
+
+                        <div class="choose-icon icon-green">
+                            <i class="bi bi-briefcase-fill"></i>
+                        </div>
+
+                        <div class="ms-4">
+
+                            <h3>Planning your business</h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, Ea consequuntur illum
+                                facere aperiam sequi optio adipisicing.
+                            </p>
 
                         </div>
 
@@ -136,24 +407,22 @@
                 </div>
 
                 <!-- Item 2 -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-6">
 
-                    <div class="service-item">
+                    <div class="choose-item d-flex">
 
-                        <div class="d-flex align-items-start">
+                        <div class="choose-icon icon-blue">
+                            <i class="bi bi-gear-wide-connected"></i>
+                        </div>
 
-                            <i class="bi bi-hand-thumbs-up service-icon"></i>
+                        <div class="ms-4">
 
-                            <div class="ms-4">
+                            <h3>Create business process</h3>
 
-                                <h3>Carefully Planned</h3>
-
-                                <p>
-                                    Amus a ligula quam tesque et ut justo,
-                                    Duis sed dolor et amet.
-                                </p>
-
-                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, Ea consequuntur illum
+                                facere aperiam sequi optio adipisicing.
+                            </p>
 
                         </div>
 
@@ -162,24 +431,46 @@
                 </div>
 
                 <!-- Item 3 -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-6">
 
-                    <div class="service-item">
+                    <div class="choose-item d-flex">
 
-                        <div class="d-flex align-items-start">
+                        <div class="choose-icon icon-red">
+                            <i class="bi bi-search"></i>
+                        </div>
 
-                            <i class="bi bi-graph-up-arrow service-icon"></i>
+                        <div class="ms-4">
 
-                            <div class="ms-4">
+                            <h3>Doing research for your clients</h3>
 
-                                <h3>Smartly Execute</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, Ea consequuntur illum
+                                facere aperiam sequi optio adipisicing.
+                            </p>
 
-                                <p>
-                                    Amus a ligula quam tesque et ut justo,
-                                    Duis sed dolor et amet.
-                                </p>
+                        </div>
 
-                            </div>
+                    </div>
+
+                </div>
+
+                <!-- Item 4 -->
+                <div class="col-lg-6">
+
+                    <div class="choose-item d-flex">
+
+                        <div class="choose-icon icon-orange">
+                            <i class="bi bi-bar-chart-line"></i>
+                        </div>
+
+                        <div class="ms-4">
+
+                            <h3>We make the best strategies</h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, Ea consequuntur illum
+                                facere aperiam sequi optio adipisicing.
+                            </p>
 
                         </div>
 
@@ -193,68 +484,43 @@
 
     </section>
 
-<!-- VIDEO SECTION -->
-<!-- ===================== VIDEO SECTION ===================== -->
 
-<section class="video-section">
+    <!-- Let's talk about your -->
+    <!-- ================= CTA SECTION ================= -->
 
-    <div class="container">
+    <!-- ===================== CTA SECTION ===================== -->
 
-        <div class="row justify-content-center">
+    <section class="cta">
 
-            <div class="col-lg-10 text-center">
+        <div class="container">
 
-                <h2>
-                    We are the next generation of the business world,
-                    creative solutions
-                </h2>
+            <div class="row align-items-center">
 
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt in culpa qui officia sed deserunt mollit anim id est
-                    laborum mollit anim id est nulla.
-                </p>
+                <!-- Left -->
+                <div class="col-lg-7">
 
-                <!-- Play Button -->
-                <button class="play-btn"
-                        data-bs-toggle="modal"
-                        data-bs-target="#videoModal">
+                    <h2 class="cta-title">
+                        Let's talk about your project and see how
+                        we can work together
+                    </h2>
 
-                    <i class="bi bi-play-fill"></i>
+                    <p class="cta-desc">
+                        Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore
+                        nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.
+                    </p>
 
-                </button>
+                </div>
 
-            </div>
+                <!-- Right -->
+                <div class="col-lg-5 text-lg-end text-center mt-4 mt-lg-0">
 
-        </div>
+                    <button type="button" class="cta-btn">
 
-    </div>
+                        Get started on a project
 
-</section>
+                        <i class="bi bi-arrow-right"></i>
 
-
-<!-- VIDEO SECTION -->
-
-<div class="modal fade" id="videoModal" tabindex="-1">
-
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-
-        <div class="modal-content border-0 bg-transparent">
-
-            <div class="modal-body p-0 position-relative">
-
-                <button type="button"
-                        class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
-                        data-bs-dismiss="modal">
-                </button>
-
-                <div class="ratio ratio-16x9">
-
-                    <iframe
-                        src="https://www.youtube.com/embed/1ZYbU82GVz4"
-                        title="Meditation Music"
-                        allowfullscreen>
-                    </iframe>
+                    </button>
 
                 </div>
 
@@ -262,321 +528,7 @@
 
         </div>
 
-    </div>
-
-</div>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-
-<!-- Our Professionals -->
-<!-- ================= TEAM ================= -->
-
-<section class="team py-5">
-
-    <div class="container">
-
-        <!-- Title -->
-        <div class="text-center mb-5">
-
-            <p class="team-subtitle">
-                OUR PROFESSIONALS
-            </p>
-
-            <h2 class="team-title">
-                Meet the Team
-            </h2>
-
-        </div>
-
-        <!-- Team List -->
-        <div class="row g-4">
-
-            <!-- Member 1 -->
-            <div class="col-lg-3 col-md-6">
-
-                <div class="team-item">
-
-                    <div class="team-img">
-
-                        <img src="./img/team1.jpg" alt="" class="img-fluid">
-
-                        <div class="team-overlay">
-
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="#"><i class="bi bi-twitter-x"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-
-                        </div>
-
-                    </div>
-
-                    <h4>Amelia Jessica</h4>
-
-                    <p>Designer</p>
-
-                </div>
-
-            </div>
-
-            <!-- Member 2 -->
-            <div class="col-lg-3 col-md-6">
-
-                <div class="team-item">
-
-                    <div class="team-img">
-
-                        <img src="./img/team2.jpg" alt="" class="img-fluid">
-
-                        <div class="team-overlay">
-
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="#"><i class="bi bi-twitter-x"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-
-                        </div>
-
-                    </div>
-
-                    <h4>Elizabeth Tracy</h4>
-
-                    <p>Photographer</p>
-
-                </div>
-
-            </div>
-
-            <!-- Member 3 -->
-            <div class="col-lg-3 col-md-6">
-
-                <div class="team-item">
-
-                    <div class="team-img">
-
-                        <img src="./img/team3.jpg" alt="" class="img-fluid">
-
-                        <div class="team-overlay">
-
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="#"><i class="bi bi-twitter-x"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-
-                        </div>
-
-                    </div>
-
-                    <h4>Charlotte Ava</h4>
-
-                    <p>Designer</p>
-
-                </div>
-
-            </div>
-
-            <!-- Member 4 -->
-            <div class="col-lg-3 col-md-6">
-
-                <div class="team-item">
-
-                    <div class="team-img">
-
-                        <img src="./img/team4.jpg" alt="" class="img-fluid">
-
-                        <div class="team-overlay">
-
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="#"><i class="bi bi-twitter-x"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-
-                        </div>
-
-                    </div>
-
-                    <h4>Emma Susan</h4>
-
-                    <p>Designer</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- Why choose us -->
- <!-- ================= WHY CHOOSE US ================= -->
-
-<section class="choose py-5">
-
-    <div class="container">
-
-        <!-- Title -->
-        <div class="text-center mb-5">
-
-            <p class="choose-subtitle">
-                WHY CHOOSE US
-            </p>
-
-            <h2 class="choose-title">
-                People choose us because we serve the best for everyone
-            </h2>
-
-        </div>
-
-        <div class="row g-5">
-
-            <!-- Item 1 -->
-            <div class="col-lg-6">
-
-                <div class="choose-item d-flex">
-
-                    <div class="choose-icon icon-green">
-                        <i class="bi bi-briefcase-fill"></i>
-                    </div>
-
-                    <div class="ms-4">
-
-                        <h3>Planning your business</h3>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, Ea consequuntur illum
-                            facere aperiam sequi optio adipisicing.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Item 2 -->
-            <div class="col-lg-6">
-
-                <div class="choose-item d-flex">
-
-                    <div class="choose-icon icon-blue">
-                        <i class="bi bi-gear-wide-connected"></i>
-                    </div>
-
-                    <div class="ms-4">
-
-                        <h3>Create business process</h3>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, Ea consequuntur illum
-                            facere aperiam sequi optio adipisicing.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Item 3 -->
-            <div class="col-lg-6">
-
-                <div class="choose-item d-flex">
-
-                    <div class="choose-icon icon-red">
-                        <i class="bi bi-search"></i>
-                    </div>
-
-                    <div class="ms-4">
-
-                        <h3>Doing research for your clients</h3>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, Ea consequuntur illum
-                            facere aperiam sequi optio adipisicing.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Item 4 -->
-            <div class="col-lg-6">
-
-                <div class="choose-item d-flex">
-
-                    <div class="choose-icon icon-orange">
-                        <i class="bi bi-bar-chart-line"></i>
-                    </div>
-
-                    <div class="ms-4">
-
-                        <h3>We make the best strategies</h3>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, Ea consequuntur illum
-                            facere aperiam sequi optio adipisicing.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- Let's talk about your -->
- <!-- ================= CTA SECTION ================= -->
-
-<!-- ===================== CTA SECTION ===================== -->
-
-<section class="cta">
-
-    <div class="container">
-
-        <div class="row align-items-center">
-
-            <!-- Left -->
-            <div class="col-lg-7">
-
-                <h2 class="cta-title">
-                    Let's talk about your project and see how
-                    we can work together
-                </h2>
-
-                <p class="cta-desc">
-                    Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore
-                    nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.
-                </p>
-
-            </div>
-
-            <!-- Right -->
-            <div class="col-lg-5 text-lg-end text-center mt-4 mt-lg-0">
-
-                <button type="button" class="cta-btn">
-
-                    Get started on a project
-
-                    <i class="bi bi-arrow-right"></i>
-
-                </button>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
+    </section>
 
 
 
