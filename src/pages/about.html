@@ -45,7 +45,7 @@
                 <div class="col-lg-6">
                     <div class="img-wrapper">
 
-                        <img src="/public/img/about2.jpg" alt="team" class="main-img">
+                        <img src="/corpvision-group-1/public/img/about2.jpg" alt="team" class="main-img">
 
                         <!-- green background shape -->
                         <div class="bg-shape"></div>
@@ -133,6 +133,7 @@
         </div>
     </section>
 
+
     <!-- Web design and digital marketing -->
     <section class="py-5">
         <div class="container">
@@ -176,11 +177,13 @@
                     <div class="row g-3">
 
                         <div class="col-6">
-                            <img src="/public/img/ab.jpg" class="img-fluid rounded-4 shadow-sm" alt="">
+                            <img src="/corpvision-group-1/public/img/ab.jpg" class="img-fluid rounded-4 shadow-sm"
+                                alt="">
                         </div>
 
                         <div class="col-6">
-                            <img src="/public/img/ab2.jpg" class="img-fluid rounded-4 shadow-sm" alt="">
+                            <img src="/corpvision-group-1/public/img/ab2.jpg" class="img-fluid rounded-4 shadow-sm"
+                                alt="">
                         </div>
 
                     </div>
@@ -192,12 +195,72 @@
         </div>
     </section>
 
+
     <!-- VIDEO -->
+    <section class="video-section">
+        <div class="video-overlay"></div>
+        <div class="container position-relative">
+            <div class="row justify-content-center">
 
+                <div class="col-lg-9 text-center">
 
+                    <h2 class="video-title">
+                        We are the next generation of the business <br> world, creative solutions
+                    </h2>
+
+                    <p class="video-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit sunt in culpa
+                        qui officia sed deserunt <br> mollit anim id est laborum mollit anim id est
+                        nulla.
+                    </p>
+
+                    <button class="video-btn" data-bs-toggle="modal" data-bs-target="#videoModal">
+
+                        <i class="fa-solid fa-play"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VIDEO MODAL -->
+
+    <div class="modal fade" id="videoModal" tabindex="-1">
+
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+
+            <div class="modal-content bg-transparent border-0">
+
+                <div class="modal-body p-0 position-relative">
+
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-2 z-3"
+                        data-bs-dismiss="modal">
+                    </button>
+
+                    <div class="ratio ratio-16x9">
+
+                        <iframe id="youtubeVideo" src="https://www.youtube.com/embed/1ZYbU82GVz4" title="YouTube video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+   
     <!-- Our Professionals -->
-    <!-- ================= TEAM ================= -->
-
     <section class="team py-5">
 
         <div class="container">
@@ -225,7 +288,7 @@
 
                         <div class="team-img">
 
-                            <img src="/public/img/team1.jpg" alt="" class="img-fluid">
+                            <img src="/corpvision-group-1/public/img/team1.jpg" alt="" class="img-fluid">
 
                             <div class="team-overlay">
 
@@ -252,7 +315,7 @@
 
                         <div class="team-img">
 
-                            <img src="/public/img/team2.jpg" alt="" class="img-fluid">
+                            <img src="/corpvision-group-1/public/img/team2.jpg" alt="" class="img-fluid">
 
                             <div class="team-overlay">
 
@@ -279,7 +342,7 @@
 
                         <div class="team-img">
 
-                            <img src="/public/img/team3.jpg" alt="" class="img-fluid">
+                            <img src="/corpvision-group-1/public/img/team3.jpg" alt="" class="img-fluid">
 
                             <div class="team-overlay">
 
@@ -306,7 +369,7 @@
 
                         <div class="team-img">
 
-                            <img src="/public/img/team4.jpg" alt="" class="img-fluid">
+                            <img src="/corpvision-group-1/public/img/team4.jpg" alt="" class="img-fluid">
 
                             <div class="team-overlay">
 
@@ -334,8 +397,6 @@
 
 
     <!-- Why choose us -->
-    <!-- ================= WHY CHOOSE US ================= -->
-
     <section class="choose py-5">
 
         <div class="container">
@@ -459,10 +520,6 @@
 
 
     <!-- Let's talk about your -->
-    <!-- ================= CTA SECTION ================= -->
-
-    <!-- ===================== CTA SECTION ===================== -->
-
     <section class="cta">
 
         <div class="container">
@@ -526,7 +583,28 @@
     <script type="text/javascript" src="./slick/slick.min.js"></script>
 
 
+    <!-- link Video -->
+      <script>
+
+        const modal = document.getElementById("videoModal");
+        const iframe = document.getElementById("youtubeVideo");
+
+        modal.addEventListener("shown.bs.modal", function () {
+
+            iframe.src = "https://www.youtube.com/embed/1ZYbU82GVz4?autoplay=1";
+
+        });
+
+        modal.addEventListener("hidden.bs.modal", function () {
+
+            iframe.src = "";
+
+        });
+
+    </script>
+
+
 
 </body>
-
 </html>
+
