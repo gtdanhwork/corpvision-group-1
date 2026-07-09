@@ -10,7 +10,7 @@ header {
 
 a {
     text-decoration: none;
-    transition: .5s all;
+    transition: .3s ease-in-out;
 }
 
 .sub_title_section {
@@ -32,6 +32,7 @@ a {
 /* Header Styles */
 
 .header_container {
+    padding: 0;
     background: #ffffff;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
 }
@@ -39,7 +40,11 @@ a {
 .dropdown-item.active {
     color: #009f4d;
     background: none;
+}
 
+.navbar-nav .nav-link {
+    color: #3f3a64;
+    opacity: 0.7;
 }
 
 .navbar-nav .nav-link.active {
@@ -47,8 +52,7 @@ a {
 }
 
 .header_logo h2 {
-    /* color: rgb(63, 58, 100); */
-    color: #fff;
+    color: #3f3a64;
     font-weight: 600;
     font-size: 30px;
     text-transform: capitalize;
@@ -264,16 +268,293 @@ a {
 
 /* Gallery Styles */
 
+.gallery_item a {
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.gallery_item a img {
+    transition: .3s ease-in-out;
+}
+
+.gallery_item:hover img {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.gallery_item a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29 42 55 / 70%);
+    opacity: 0;                                
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.gallery_item:hover a::after {
+    opacity: 1;
+}
+
 .gallery_overlay {
     color: white;
     padding: 46px 50px;
     left: 0;
     bottom: -100%;
     opacity: 0;
+    z-index: 2;
+    visibility: hidden;
+
+    transition: all 0.3s;
+}
+
+.gallery_item:hover .gallery_overlay {
+    bottom: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Progress Styles */
+.progress_bar .progress, .progress_bar .progress-bar {
+    overflow: visible;
+}
+
+.progress_gradient_market::before, .progress_gradient_market::after,
+.progress_gradient_webdesign::before, .progress_gradient_webdesign::after,
+.progress_gradient_analytics::before, .progress_gradient_analytics::after,
+.progress_gradient_webdev::before, .progress_gradient_webdev::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+    right: 0;
+    top: 50%;
+}
+
+.progress_gradient_market::before,
+.progress_gradient_analytics::before,
+.progress_gradient_webdesign::before,
+.progress_gradient_webdev::before {
+    height: 28px;
+    width: 28px;
+    border: 1px solid;
+    opacity: .3;
+}
+
+.progress_gradient_market::after,
+.progress_gradient_analytics::after,
+.progress_gradient_webdesign::after,
+.progress_gradient_webdev::after {
+    height: 13px;
+    width: 13px;
+    border: 3px solid;
+    background-color: #ffffff;
+}
+
+.progress_percent_label {
+    position: absolute;
+    right: 0;
+    bottom: 12px;
+    transform: translateX(50%);
+    font-size: 18px;
+    color: #333;
+}
+
+.progress_gradient_market {
+    color: #61fded;
+    background-color: #0d8abc;
+    background-image: linear-gradient(-224deg, #0d8abc, #61fded);
+}
+
+.progress_gradient_webdesign {
+    color: #eece90;
+    background-color: #d45529;
+    background-image: linear-gradient(-224deg, #d45529, #eece90);
+}
+
+.progress_gradient_analytics {
+    color: #5c51ff;
+    background-color: #f646a9;
+    background-image: linear-gradient(-224deg, #f646a9, #5c51ff);}
+
+.progress_gradient_webdev {
+    color: #e5529a;
+    background-color: #e77654;
+    background-image: linear-gradient(-224deg, #e77654, #e5529a);
+}
+
+.progress_bar_item {
+    margin-bottom: 30px;
+}
+
+.progress_bar_item .progress {
+    height: 4px;
+}
+
+.progress_bar_item h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.progress_bar_item .progress-bar-striped {
+    background-size: cover;
 }
 
 /* Testimonial Styles */
 .testimonial_section {
     background-color: #f7f7f7;
+}
+
+.testimonial_card {
+    padding: 40px 30px;
+    max-width: 900px;
+}
+
+.testimonial_card p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #666666;
+    opacity: .8;
+}
+
+.testimonial_description {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    text-align: left;
+    gap: 20px;
+}
+
+.testimonial_image {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.testimonial_image img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.testimonial_meta {
+    align-self: center;
+}
+
+.testimonial_meta h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.testimonial_meta p {
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #213364;
+    opacity: 0.5;
+    transition: .3s all;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #213364;
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+/* Blog Styles */
+
+.blog_card {
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.04);
+    border: 1px solid #ffffff;
+}
+
+.blog_thumbnail img{
+    transition: .3s all;
+}
+
+.blog_card:hover .blog_thumbnail img {
+    transform: scale(1.1);
+}
+
+.blog_description {
+    padding: 1.25rem;
+}
+
+.blog_description p {
+    color: #999999;
+}
+
+.blog_description h4 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #3f3a64;
+    margin: 10px 0 0 0;
+}
+
+.blog_footer {
+    padding: 0.75rem 1.25rem;
+    grid-template-columns: auto 1fr auto;
+    border-top: 1px solid #eeeeee;
+}
+
+.blog_footer p {
+    color: #666666;
+}
+
+.blog_footer a {
+    font-weight: 600;
+    color: #3f3a64;
+}
+
+/* Subscription Styles */
+.subscription_section {
+    background-image: url("../../public/img/map.png");
+    background-color: #151421;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: #fff;
+}
+
+.subscription_container {
+    max-width: 700px;
+}
+
+.subscription_form {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50px 1fr auto;
+    max-width: 550px;
+    margin: auto;
+}
+
+.subscription_icon {
+    color: #999;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 0 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.subscription_form input[type="email"] {
+    color: #999;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 14px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.subscription_form button {
+    padding: 0 25px;
 }
 
