@@ -97,28 +97,26 @@
     height: 55px;
     border-radius: 50%;
     border: 2px solid #00a651;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     color: #00a651;
     cursor: pointer;
 }
 
 /* FEATURE CARDS */
 .feature-card {
-    background: #f8f9fa;
+    background: rgba(255, 255, 255, 0.711);
     padding: 25px;
     border-radius: 15px;
-
     display: flex;
     gap: 15px;
     height: 100%;
 }
 
-.feature-card .icon {
-    font-size: 32px;
+.feature-card i {
+    font-size: 48px;
+    color: #00a651;
 }
 
 .feature-card h5 {
@@ -308,32 +306,6 @@ iframe {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Our Professionals */
 .team {
     padding: 100px 0;
@@ -440,7 +412,6 @@ iframe {
 
 /* Why choose us */
 .choose {
-    padding: 100px 0;
     background: #fff;
 }
 
@@ -449,7 +420,7 @@ iframe {
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 2px;
-    margin-bottom: 15px;
+
 }
 
 .choose-title {
@@ -556,25 +527,23 @@ iframe {
 
 /* Let's talk about your */
 .cta {
-    padding: 100px 0;
     background: #fff;
 }
 
 /* Left */
 .cta-title {
     color: #2d2f67;
-    font-size: 58px;
+    font-size: 48px;
     font-weight: 700;
     line-height: 1.3;
     margin-bottom: 30px;
+    padding-right: 22px;
 }
 
 .cta-desc {
     color: #7d7d7d;
-    font-size: 22px;
-    line-height: 1.8;
-    max-width: 700px;
-    margin: 0;
+    font-size: 20px;
+    margin-right: 100px;
 }
 
 /* BUTTON */
@@ -587,8 +556,8 @@ iframe {
     color: #fff;
     border: none;
     border-radius: 10px;
-    padding: 22px 42px;
-    font-size: 24px;
+    padding: 8px 16px;
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     transition: all .35s ease;
@@ -597,7 +566,7 @@ iframe {
 
 /* Arrow */
 .cta-btn i {
-    font-size: 24px;
+    font-size: 16px;
     transition: transform .35s ease;
 }
 
