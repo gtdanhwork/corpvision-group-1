@@ -6,90 +6,570 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corp Vision - Vision to your Future</title>
 
+    <!-- Flaticon CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
         rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css"
+        integrity="sha512-6f7HT84a/AplPkpSRSKWqbseRTG4aRrhadjZezYQ0oVk/B+nm/US5KzQkyyOyh0Mn9cyDdChRdS9qaxJRHayww=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="./src/styles/css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./src/styles/css/owlcarousel/owl.theme.default.min.css">
+
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="./src/styles/css/lightbox/lightbox.min.css">nk
+    <link rel="stylesheet" href="./src/styles/index.css">
 </head>
 
 <body>
-    <header class="container d-flex justify-content-between">
-        <div class="header_logo">
-            <div class="logo_icon d-flex align-items-center">
-                <i class="fa fa-align-right"></i>
-                <div class="logo_title">Corp Vision</div>
-            </div>
-            <div class="logo_subtitle">Vision to your future</div>
-        </div>
-        <div class="header_navigation">
-            <nav>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li>    
-                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            PAGES
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown_item">BLOG POSTS</a></li>
-                            <li><a href="#" class="dropdown_item">404 PAGE</a></li>
-                            <li><a href="#" class="dropdown_item">LANDING PAGE</a></li>
-                            <li><a href="#" class="dropdown_item">ELEMENT PAGES</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header_misc">
-            <div class="d-inline-flex">
-                <div class="header_search">
-                    <button class="btn_search">
-                        <i class="fa fa-search"></i>
-                    </button>
+    <!-- Heade Section -->
+    <header id="main-header" class="fixed-top header_container">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <div class="container header-container">
+                <div class="header_logo">
+                    <div class="logo_icond-flex m-0 align-items-center">
+                        <h2 class="nav-brand">
+                            <i class="fa fa-align-right"></i>Corp Vision
+                            <span>Vision to your future</span>
+                        </h2>
+                    </div>
                 </div>
-                <div class="header_theme">
-                    <button class="btn_toggle_theme">
-                        <i class="fa fa-moon"></i>
-                    </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content"
+                    aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-content">
+                    <ul class="navbar-nav mx-lg-auto header_navigation">
+                        <li class="nav-item"><a href="#" class="nav-link px-3 active" aria-current="page">HOME</a></li>
+                        <li class=" nav-item"><a href="#" class="nav-link px-3">ABOUT</a></li>
+                        <li class="nav-item "><a href="#" class="nav-link px-3">SERVICES</a></li>
+                        <li class="nav-item dropdown-center">
+                            <a class="nav-link px-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                PAGES
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item px-3">BLOG POSTS</a></li>
+                                <li><a href="#" class="dropdown-item px-3">404 PAGE</a></li>
+                                <li><a href="#" class="dropdown-item px-3">LANDING PAGE</a></li>
+                                <li><a href="#" class="dropdown-item px-3">ELEMENT PAGES</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item "><a href="#" class="nav-link px-3">CONTACT</a></li>
+                    </ul>
+                    <div class="header_misc">
+                        <div class="d-inline-flex">
+                            <div class="header_search">
+                                <button class="btn_search">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                            <div class="header_theme">
+                                <button class="btn_toggle_theme">
+                                    <i class="fa fa-moon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
-    <section class="container vh-100">
-        <div class="banner_section">
-            <div class="banner_carousel">
+
+    <!-- Banner Section -->
+    <section class="position-relative banner_section">
+        <div class="d-flex align-items-center h-100 banner_container" style="height: 100%;">
+            <div class="container banner-carousel">
                 <div class="banner_item">
-                    <div class=""></div>
+                    <h1>We will solve your issues our vision to your future</h1>
+                    <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea. </p>
+                    <button class="btn btn-style btn-primary btn-cta">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div class="position-absolute bottom-0 start-0 w-100 shape">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+                <path fill-opacity="1">
+                    <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
+                        values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+          M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;" />
+                </path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5 about_section">
+        <div class="container py-lg-5 py-md-3 py-2 about_container">
+            <div class="row align-items-center">
+                <div class="col-6 align-items-center about_left">
+                    <div class="about_title">
+                        <h3 class="sub_title_section">ABOUT US</h3>
+                        <h2 class="title_section">We make the best strategies for you, Enhancing your success</h2>
+                        <p class="mt-md-4 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut
+                            ex
+                            ea.</p>
+                        <ul class="list-unstyled pt-lg-2 mt-4">
+                            <li class="mb-3"><i class="fa fa-check-circle"></i><a href="#"> UI/UX Design and
+                                    Development</a></li>
+                            <li class="mb-3"><i class="fa fa-check-circle"></i><a href="#"> Branding Design and
+                                    Identity</a></li>
+                            <li class="mb-3"><i class="fa fa-check-circle"></i><a href="#"> Mobile App Design and
+                                    Development</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 about_right">
+                    <div class="row about_content">
+                        <div class="col-6">
+                            <div class="about_image"><img src="./public/img/a.jpg" class="img-fluid rounded" alt="">
+                            </div>
+                        </div>
+                        <div class="col-6 mt-4">
+                            <div class="about_image"><img src="./public/img/c1.jpg"
+                                    class="img-fluid rounded mb-md-3 mb-2" alt="">
+                            </div>
+                            <div class="about_image"><img src="./public/img/c4.jpg"
+                                    class="img-fluid rounded mt-md-3 mt-2" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Features Section-->
+    <section class="py-5 feature_section">
+        <div class="container py-lg-5 py-md-3 py-2 feature_container">
+            <div class="row align-items-center">
+                <div class="col-6 feature_left">
+                    <div class="feature_title">
+                        <h3 class="sub_title_section">Every day brings new challenges</h3>
+                        <h2 class="title_section">Creative agency focused on vision, product and people</h2>
+                        <p class="mt-md-4 mt-3">Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac
+                            sed, lacinia est.
+                            Quisque ut lectus consequat, venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+                            elit. Suspendisse non init magnaa velit efficitur, dolor eget ex fermentum.</p>
+                        <button class="btn btn-cta btn-primary mt-lg-5 mt-4 rounded-2">Discover more</button>
+                    </div>
+                </div>
+                <div class="col-6 feature_right">
+                    <div class="d-grid feature_content">
+                        <div class="grid_item
+                        "><img src="./public/img/icon1.png" alt=""><a href="#">Our
+                                Process</a></div>
+                        <div class="grid_item
+                        "><img src="./public/img/icon2.png" alt=""><a href="#">How
+                                We
+                                Help</a></div>
+                        <div class="grid_item
+                        "><img src="./public/img/icon3.png" alt=""><a href="#">UI/UX
+                                Design</a></div>
+                        <div class="grid_item
+                        "><img src="./public/img/icon4.png" alt=""><a href="#">Creative Ideas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Service Section -->
+    <section class="py-5 service-section">
+        <div class="py-5 container service-container">
+            <div class="service_title">
+                <h2 class="text-center title_section">Always there for your care, our Services</h2>
+            </div>
+            <div class="row mt-lg-5 mt-4 text-center justify-content-center service_content">
+                <div class="col-lg-4 col-md-6 service_card">
+                    <img src="./public/img/s1.jpg" alt="" class="img-fluid rounded-top-2">
+                    <div class="service_info">
+                        <a href="#">Work Expertise</a>
+                        <p class="text-area">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
+                    </div>
+                    <a href="#" class="btn mt-3">Learn More</a>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-md-0 mt-5 service_card">
+                    <img src="./public/img/s2.jpg" alt="" class="img-fluid rounded-top-2">
+                    <div class="service_info">
+                        <a href="#">Work Expertise</a>
+                        <p class="text-area">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
+                    </div>
+                    <a href="#" class="btn mt-3">Learn More</a>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-lg-0 mt-5 service_card">
+                    <img src="./public/img/s3.jpg" alt="" class="img-fluid rounded-top-2">
+                    <div class="service_info">
+                        <a href="#">Work Expertise</a>
+                        <p class="text-area">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
+                    </div>
+                    <a href="#" class="btn mt-3">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Gallery Section -->
+    <section class="py-5 gallery-section">
+        <div class="py-5 container gallery_container">
+            <div class="gallery_title text-center">
+                <h3 class="sub_title_section">Our Gallery</h3>
+                <h2 class="title_section">Successful projects we've done</h2>
+            </div>
+            <div class="py-lg-5 py-md-4 py-2 gallery_content">
+                <div class="row g-4">
+                    <div class="col-4 position-relative overflow-hidden gallery_item">
+                        <a href="./public/img/c1.jpg" data-lightbox="project" data-title="Project 1">
+                            <img src="./public/img/c1.jpg" class="img-fluid d-block w-100" alt="C1">
+                            <div class="position-absolute gallery_overlay">
+                                <h3>Project 1</h3>
+                                <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 position-relative overflow-hidden gallery_item">
+                        <a class="d-block" href="./public/img/c2.jpg" data-lightbox="project" data-title="Project 2">
+                            <img src="./public/img/c2.jpg" class="img-fluid d-block w-100" alt="C2">
+                            <div class="position-absolute gallery_overlay">
+                                <h3>Project 2</h3>
+                                <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 position-relative overflow-hidden gallery_item">
+                        <a href="./public/img/c3.jpg" data-lightbox="project" data-title="Project 3">
+                            <img src="./public/img/c3.jpg" class="img-fluid d-block w-100" alt="C3">
+                            <div class="position-absolute gallery_overlay">
+                                <h3>Project 3</h3>
+                                <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 position-relative overflow-hidden gallery_item">
+                        <a href="./public/img/c4.jpg" data-lightbox="project" data-title="Project 4">
+                            <img src="./public/img/c4.jpg" class="img-fluid d-block w-100" alt="C4">
+                            <div class="position-absolute gallery_overlay">
+                                <h3>Project 4</h3>
+                                <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 position-relative overflow-hidden gallery_item">
+                        <a href="./public/img/c5.jpg" data-lightbox="project" data-title="Project 5">
+                            <img src="./public/img/c5.jpg" class="img-fluid d-block w-100" alt="C5">
+                            <div class="position-absolute overflow-hidden gallery_overlay">
+                                <h3>Project 5</h3>
+                                <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 position-relative overflow-hidden gallery_item">
+                        <a href="./public/img/c6.jpg" data-lightbox="project" data-title="Project 6">
+                            <img src="./public/img/c6.jpg" class="img-fluid d-block w-100" alt="C6">
+                            <div class="position-absolute gallery_overlay">
+                                <h3>Project 6</h3>
+                                <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <hr class="my-5 gallery_border">
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-3 col-4">
+                        <img src="./public/img/brand1.png" alt="Brand" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-4">
+                        <img src="./public/img/brand6.png" alt="Brand" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-4">
+                        <img src="./public/img/brand3.png" alt="Brand" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-4 mt-md-0 mt-4">
+                        <img src="./public/img/brand4.png" alt="Brand" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-4 mt-md-0 mt-4">
+                        <img src="./public/img/brand5.png" alt="Brand" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-5 process_section">
+        <div class="container py-5 process_container">
+            <div class="row align-items-center gx-6">
+                <div class="col-6 progress_left">
+                    <img src="./public/img/about.jpg" alt="" class="img-fluid rounded-2">
+                </div>
+                <div class="col-6 progress_right">
+                    <div class="mb-4 pb-lg-2 progress_title">
+                        <h3 class="sub_title_section">Your success is our success</h3>
+                        <h2 class="title_section">Web design, marketing & SEO solutions that get results</h2>
+                    </div>
+                    <div class="progress_bar">
+                        <div class="progress_bar_item">
+                            <h3>Marketing</h3>
+                            <div class="progress" role="progressbar" aria-label="Marketing" aria-valuenow="80">
+                                <div class="position-relative progress-bar progress-bar-striped progress_gradient_market"
+                                    style="width: 80%;"><span class="progress_percent_label">80%</span></div>
+                            </div>
+                        </div>
+                        <div class="progress_bar_item">
+                            <h3>Responsive Web design</h3>
+                            <div class="progress" role="progressbar" aria-label="Responsive Web design"
+                                aria-valuenow="95">
+                                <div class="position-relative progress-bar progress-bar-striped progress_gradient_webdesign"
+                                    style="width: 95%;"><span class="progress_percent_label">95%</span></div>
+                            </div>
+                        </div>
+                        <div class="progress_bar_item">
+                            <h3>Analytics</h3>
+                            <div class="progress" role="progressbar" aria-label="Analytics" aria-valuenow="60">
+                                <div class="position-relative progress-bar progress-bar-striped progress_gradient_analytics"
+                                    style="width: 60%;"><span class="progress_percent_label">60%</span></div>
+                            </div>
+                        </div>
+                        <div class="mb-0 progress_bar_item">
+                            <h3>Web Development</h3>
+                            <div class="progress" role="progressbar" aria-label="Web Development" aria-valuenow="85">
+                                <div class="position-relative flex-nowrap progress-bar progress-bar-striped progress_gradient_webdev"
+                                    style="width: 85%;"><span class="progress_percent_label">85%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-5 testimonial_section">
+        <div class="container py-lg-4 py-md-3 py-2 pb-lg-0 testimonial_container">
+            <div class="testimonial_title">
+                <h3 class="text-center mb-1 sub_title_section">Happy Clients Feedback</h3>
+                <h2 class="text-center mb-sm-5 mb-4 title_section">Reviews and Testimonials</h2>
+            </div>
+            <!-- Owl Carousel Setting -->
+            <div class="owl-theme owl-carousel testimonial_carousel" id="carouselTestimonials">
+                <div class="w-100 mx-auto testimonial_card">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque iure suscipit
+                        quam,
+                        quidem
+                        autem
+                        doloremque facilis quia fuga tempora architecto libero qui magnam ipsa commodi
+                        temporibus
+                        accusamus quibusdam, rerum culpa?</p>
+                    <div class="testimonial_description">
+                        <div class="testimonial_image">
+                            <img src="./public/img/team1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="testimonial_meta">
+                            <h4>John Wilson</h4>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 mx-auto testimonial_card">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque iure suscipit
+                        quam,
+                        quidem
+                        autem
+                        doloremque facilis quia fuga tempora architecto libero qui magnam ipsa commodi
+                        temporibus
+                        accusamus quibusdam, rerum culpa?</p>
+                    <div class="testimonial_description">
+                        <div class="testimonial_image">
+                            <img src="./public/img/team2.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="testimonial_meta">
+                            <h4>John Wilson</h4>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 mx-auto testimonial_card">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque iure suscipit
+                        quam,
+                        quidem
+                        autem
+                        doloremque facilis quia fuga tempora architecto libero qui magnam ipsa commodi
+                        temporibus
+                        accusamus quibusdam, rerum culpa?</p>
+                    <div class="testimonial_description">
+                        <div class="testimonial_image">
+                            <img src="./public/img/team3.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="testimonial_meta">
+                            <h4>John Wilson</h4>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 mx-auto testimonial_card">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque iure suscipit
+                        quam,
+                        quidem
+                        autem
+                        doloremque facilis quia fuga tempora architecto libero qui magnam ipsa commodi
+                        temporibus
+                        accusamus quibusdam, rerum culpa?</p>
+                    <div class="testimonial_description">
+                        <div class="testimonial_image">
+                            <img src="./public/img/team4.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="testimonial_meta">
+                            <h4>John Wilson</h4>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-5 blog_section">
+        <div class="container py-5 py-lg-5 py-md-4 py-2 blog_container">
+            <div class="blog_title">
+                <h3 class="text-center mb-1 sub_title_section">Latest News</h3>
+                <h2 class="text-center mb-sm-5 mb-4 title_section">Our insight and articles</h2>
+            </div>
+            <div class="row blog_content">
+                <div class="col-lg-4 col-md-6 blog_card">
+                    <a href="#" class="overflow-hidden d-block blog_thumbnail">
+                        <img src="./public/img/blog1.jpg" class="img-fluid rounded-top-3" alt="">
+                    </a>
+                    <div class="blog_meta">
+                        <div class="blog_description">
+                            <a href="#">
+                                <p class="m-0">Startup Business</p>
+                                <h4>
+                                    Hello World!
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="d-grid blog_footer">
+                            <img src="./public/img/w3layout.jpeg" alt="">
+                            <p>by <span><a href="#">W3Layouts</a></span></p>
+                            <p>April 1, 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 blog_card">
+                    <a href="#" class="overflow-hidden d-block blog_thumbnail">
+                        <img src="./public/img/blog2.jpg" class="img-fluid rounded-top-3" alt="">
+                    </a>
+                    <div class="blog_meta">
+                        <div class="blog_description">
+                            <a href="#">
+                                <p class="m-0">Startup Business</p>
+                                <h4>
+                                    Companies in NY launched a joint project on a three-tower hall
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="d-grid blog_footer">
+                            <img src="./public/img/w3layout.jpeg" alt="">
+                            <p>by <span><a href="#">W3Layouts</a></span></p>
+                            <p>April 1, 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 blog_card">
+                    <a href="#" class="overflow-hidden d-block blog_thumbnail">
+                        <img src="./public/img/blog3.jpg" class="img-fluid rounded-top-3" alt="">
+                    </a>
+                    <div class="blog_meta">
+                        <div class="blog_description">
+                            <a href="#">
+                                <p class="m-0">Marketing Strategy</p>
+                                <h4>
+                                    Design breakthrough upgrades the product and ready to launch
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="d-grid blog_footer">
+                            <img src="./public/img/w3layout.jpeg" alt="">
+                            <p>by <span><a href="#">W3Layouts</a></span></p>
+                            <p>April 1, 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Section-->
+    <section class="py-5 subscription_section">
+        <div class="container py-md-5 py-sm-4 py-2 subscription_container">
+            <div class="text-center subscription_title">
+                <h3>Let’s find out how to work together</h3>
+                <p>Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet. Lorem
+                    ipsum dolor sit amet elit.</p>
+            </div>
+            <form class="mt-5 mx-auto subscription_form">
+                <div class="d-flex align-items-center subscription_icon">
+                    <i class="fa fa-paper-plane"></i>
+                </div>
+                <input type="email" name="Email" placeholder="Type your email..." required>
+                <button type="button" class="btn btn-primary rounded-start-0">Subscribe</button>
+            </form>
+        </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+
+    <!-- JQuery Script -->
     <script src="https://code.jquery.com/jquery-4.0.0.min.js"
         integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+
+
+    <!-- Bootstrap 5.3.8 Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/license.min.js"></script>
-    <script type="text/javascript" src="./slick/slick.min.js"></script>
+
+    <!-- Lightbox Script -->
+    <script src="./src/styles/script/lightbox/lightbox-plus-jquery.min.js"></script>
+
+    <!-- Owl Carousel Script-->
+    <script src="./src/styles/script/owlcarousel/owl.carousel.min.js"></script>
+    <script>$('#carouselTestimonials').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+            }
+        })
+    </script>
+
+    <!-- Custom Script - Header Scrolling Event -->
 </body>
 
 </html>
