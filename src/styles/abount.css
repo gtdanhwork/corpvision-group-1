@@ -171,7 +171,7 @@
 /* VIDEO */
 .video-section {
     position: relative;
-    background-image: url(/corpvision-group-1/public/img/bg1.jpg);
+    background-image: url(.././../public/img/bg1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
