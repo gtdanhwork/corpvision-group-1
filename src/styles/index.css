@@ -142,7 +142,7 @@ a {
 
 .banner_section {
     height: 90vh;
-    background-image: linear-gradient(rgba(29,42,55,0.7),rgba(29,42,55,0.7)), url('../..//public/img/b1.jpg');
+    background-image: linear-gradient(rgba(29,42,55,0.7),rgba(29,42,55,0.7)), url('../../public/img/b1.jpg');
     background-size: cover;
 }
 

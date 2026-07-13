@@ -102,9 +102,6 @@ a {
     font-weight: 600;
 
     transition: all 0.5s;
-
-    
-    /* color: rgba(63, 58, 100, 0.7); */
 }
 
 .header_search button, .header_theme button {
