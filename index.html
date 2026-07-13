@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="./src/styles/css/owlcarousel/owl.theme.default.min.css">
 
     <!-- Flaticon CSS -->
-    <link rel="stylesheet" href="./src/styles/css/lightbox/lightbox.min.css">nk
+    <link rel="stylesheet" href="./src/styles/css/lightbox/lightbox.min.css">
     <link rel="stylesheet" href="./src/styles/index.css">
 </head>
 
@@ -43,7 +43,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark p-0">
             <div class="container header-container">
                 <div class="header_logo">
-                    <div class="logo_icond-flex m-0 align-items-center">
+                    <div class="logo_icon d-flex m-0 align-items-center">
                         <h2 class="nav-brand">
                             <i class="fa fa-align-right"></i>Corp Vision
                             <span>Vision to your future</span>
@@ -569,6 +569,17 @@
             }
         })
     </script>
+
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#main-header").addClass("nav-fixed");
+            } else {
+                $("#main-header").removeClass("nav-fixed");
+            }
+        });</script>
 
     <!-- Custom Script - Header Scrolling Event -->
 </body>

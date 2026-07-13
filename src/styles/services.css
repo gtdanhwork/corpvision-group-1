@@ -10,6 +10,7 @@ header {
     height: 100px;
 }
 
+
 a {
     text-decoration: none;
     transition: .3s ease-in-out;
@@ -33,32 +34,56 @@ a {
 
 /* Header Styles */
 
+.fixed-top {
+    transition: 0.3s ease-in-out;
+}
+
+.nav-fixed {
+    padding: 0px;
+    background-color: #fff;
+    border-bottom: none;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
 .header_container {
     padding: 0;
-    background: #ffffff;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
 }
 
 .dropdown-item.active {
-    color: #009f4d;
+    color: #fff;
     background: none;
 }
 
 .navbar-nav .nav-link {
-    color: #3f3a64;
+    color: #fff;
     opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-fixed .navbar-nav .nav-link {
+    color: #3f3a64;
 }
 
 .navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+.nav-fixed .navbar-nav .nav-link.active {
     color: #009f4d;
 }
 
 .header_logo h2 {
-    color: #3f3a64;
+    color: #fff;
     font-weight: 600;
     font-size: 30px;
     text-transform: capitalize;
+    transition: 0.3s ease-in-out;
     
+}
+
+.nav-fixed .header_logo h2 {
+    color:#3f3a64;
 }
 
 .header_logo span {
@@ -108,28 +133,34 @@ a {
     text-align: center; 
     width: 45px;
     height: 45px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-fixed .header_theme button {
+    color: #3f3a64;
 }
 
 /* Services */
-.services {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/corpvision-group-1/public/img/b1.jpg);
+
+.hero-section {
+    background-image: linear-gradient(rgb(29 42 55 / 70%), rgb(29 42 55 / 70%)), url("../../public/img/b1.jpg");
     background-size: cover;
-    min-height: 50vh;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    background-repeat: no-repeat;
 }
 
-.services h2 {
-    color: #fff;
+.hero-title {
+    color: #ffffff;
+}
+
+
+.hero-title h2 {
+    margin-top: 50px;
     font-size: 50px;
-    font-weight: 600;
-    padding-top: 150px;
 }
 
-.services p {
+.hero-title p {
     font-size: 20px;
-    color: #ddd;
 }
 
 /* Check our services */
@@ -243,38 +274,16 @@ a {
 
 /* Innovative technology */
 .contact {
-    background-image: url("./img/contact-bg.jpg");
+    background-image: linear-gradient(rgb(29 42 55 / 70%), rgb(29 42 55 / 70%)),url("../../public/img/bg1.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
     padding: 100px 0;
 }
 
-.contact__overlay {
-    position: absolute;
-    inset: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/corpvision-group-1/public/img/bg1.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    color: white;
-
-}
-
-.contact__container {
-    width: 92%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    gap: 30px;
-}
-
 /* Bên Trái */
 .contact__left {
-    width: 50%;
-    color: white;
-    padding-right: 10px;
+    padding-right: 3rem ;
 }
 
 .contact__left h6 {
@@ -313,11 +322,8 @@ a {
 
 /* Bên Phải */
 .contact__right {
-    width: 50%;
     background: white;
-    align-items: center;
     padding: 50px;
-    border-radius: 10px;
 }
 
 .contact__right h3 {
