@@ -1,4 +1,140 @@
 /* About our company */
+/* Global Styles */
+
+body {
+    font-family: "Jost", sans-serif;
+}
+
+header {
+    height: 100px;
+}
+
+a {
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+p {
+    font-size: 17px;
+}
+
+.sub_title_section {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #7e7d7d;
+    text-transform: uppercase;
+}
+
+.title_section {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+    color: #3f3a64;
+}
+
+/* Header Styles */
+
+.header_container {
+    padding: 0;
+    background: #ffffff;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-item.active {
+    color: #009f4d;
+    background: none;
+}
+
+.navbar-nav .nav-link {
+    color: #3f3a64;
+    opacity: 0.7;
+}
+
+.navbar-nav .nav-link.active {
+    color: #009f4d;
+}
+
+.header_logo h2 {
+    color: #3f3a64;
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: capitalize;
+    
+}
+
+.header_logo span {
+    font-size: 15px;
+    display: block;
+    padding-left: 46px;
+}
+
+.header_logo i {
+    color: #009f4d;
+    font-size: 30px;
+}
+
+.header_navigation a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: all 0.5s;
+
+    
+    /* color: rgba(63, 58, 100, 0.7); */
+}
+
+.header_search button, .header_theme button {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.header_search button {
+    line-height: 45px;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    background: #009f4d;
+    outline: 0;
+    transform-origin: 50%;
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    color: white;
+}
+
+.header_theme button {
+    line-height: 45px;
+    text-align: center; 
+    width: 45px;
+    height: 45px;
+}
+
+/* Hero Styles */
+
+.hero-section {
+    background-image: linear-gradient(rgb(29 42 55 / 70%), rgb(29 42 55 / 70%)), url("../../public/img/b1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-title {
+    color: #ffffff;
+}
+
+
+.hero-title h2 {
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.hero-title p {
+    font-size: 20px;
+}
+
 /* SECTION */
 .about-section {
     font-family: Arial, sans-serif;
@@ -7,16 +143,14 @@
 /* IMAGE WRAPPER */
 .img-wrapper {
     position: relative;
-    width: 420px;
-    height: 420px;
+    width: 500px;
 }
 
 /* MAIN IMAGE */
 .main-img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
-    border-radius: 60% 40% 60% 40% / 40% 60% 40% 60%;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     position: relative;
     z-index: 2;
@@ -28,9 +162,8 @@
     width: 100%;
     height: 100%;
     background: #bfe8cf;
-    border-radius: 60% 40% 60% 40% / 40% 60% 40% 60%;
-    top: 15px;
-    left: 15px;
+    border-radius: 25% 70% 84% 22% / 42% 75% 25% 75%;
+    top: 0;
     z-index: 1;
 }
 
@@ -40,8 +173,8 @@
     bottom: -25px;
     right: -25px;
 
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
     background: #00a651;
     color: white;
 
@@ -54,11 +187,21 @@
     z-index: 3;
 }
 
-.badge-box h2,
-.badge-box p {
-    transform: rotate(-45deg);
 
+.badge-info {
+    transform: rotate(-45deg);
 }
+
+.badge-info h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.badge-info p {
+    font-size: 24px;
+}
+
+
 
 /* TEXT */
 .sub-title {
@@ -85,10 +228,12 @@
 
 /* ACTION */
 .action-box {
-    display: flex;
-    align-items: center;
     gap: 20px;
     margin-top: 25px;
+}
+
+.action-box a:first-child{
+    padding: 15px 50px;
 }
 
 /* PLAY BUTTON */
@@ -117,18 +262,24 @@
     height: 100%;
 }
 
-.feature-card .icon {
-    font-size: 32px;
+.feature-card i {
+    font-size: 38px;
+    color: #009f4d;
 }
 
-.feature-card h5 {
+.feature-card h4 {
     font-weight: 700;
-    color: #2c2c5a;
+    color: #3f3a64;
+    transition: 0.3s all;
 }
 
 .feature-card p {
     margin: 0;
     color: gray;
+}
+
+.feature-card:hover h4 {
+    color: #009f4d;
 }
 
 
@@ -155,7 +306,6 @@
 
 /* DESCRIPTION */
 .desc {
-    font-size: 14px;
     color: #777;
 }
 
